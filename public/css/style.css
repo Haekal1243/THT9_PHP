@@ -1,0 +1,338 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #000;
+  padding: 1rem 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #f4a51c;
+}
+.hero {
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero .btn-primary {
+  display: inline-block;
+  background-color: #d4a017;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background-color: #b68e14;
+}
+
+/* About Team Section */
+.about-team {
+  padding: 70px 20px;
+  background: linear-gradient(180deg, #111, #222); /* Gradasi warna gelap */
+  color: #fff;
+  text-align: center;
+  border-bottom: 2px solid #d4a017; /* Garis bawah emas */
+}
+
+.about-team h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #d4a017; /* Warna emas */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-team p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* Features Section */
+.features {
+  padding: 50px 20px;
+  background: #181818; /* Warna latar lebih gelap */
+  color: #fff;
+  text-align: center;
+}
+
+.features .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.features .feature img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 3px solid #d4a017; /* Border emas */
+}
+
+.features h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #d4a017;
+}
+
+.features p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Latest News Section */
+.latest-news {
+  padding: 70px 20px;
+  background: linear-gradient(180deg, #222, #111); /* Gradasi terbalik */
+  color: #fff;
+  text-align: center;
+  border-top: 2px solid #d4a017; /* Garis atas emas */
+}
+
+.latest-news h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #d4a017;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.news-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.news-card {
+  background: #333; 
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.news-card h3 a {
+  text-decoration: none;
+  color: #d4a017;
+  font-size: 1.3rem;
+}
+
+.news-card h3 a:hover {
+  color: #fff;
+}
+
+.news-card p {
+  font-size: 1rem;
+  color: #bbb;
+  margin-top: 10px;
+}
+
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #111, #222); /* Gradasi warna gelap */
+  color: #fff;
+}
+
+.auth-page .container {
+  background: #1e1e1e; /* Warna background form */
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.auth-page h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #d4a017; /* Warna emas untuk heading */
+}
+
+.auth-form input {
+  width: 100%; /* Pastikan input memenuhi lebar penuh container */
+  padding: 15px; /* Tambahkan padding agar lebih proporsional */
+  margin-bottom: 20px; /* Tambahkan jarak antar elemen input */
+  border: 1px solid #333; /* Warna border gelap */
+  border-radius: 8px; /* Radius untuk tampilan lebih halus */
+  background: #2c2c2c; /* Warna latar belakang input */
+  color: #fff; /* Warna teks putih */
+  font-size: 1rem; /* Ukuran teks proporsional */
+  box-sizing: border-box; /* Pastikan padding tidak memengaruhi ukuran elemen */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-form input:focus {
+  border-color: #d4a017; /* Ubah warna border saat fokus */
+  box-shadow: 0 0 8px rgba(212, 160, 23, 0.5); /* Efek bayangan saat fokus */
+  outline: none; /* Hilangkan outline default */
+}
+
+.auth-form input::placeholder {
+  color: #aaa; /* Warna placeholder lebih lembut */
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #d4a017;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #b68e14;
+}
+
+.auth-page p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.auth-page p a {
+  color: #d4a017;
+  text-decoration: none;
+}
+
+.auth-page p a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 0.5rem 0;
+}
+
+.footer-links a {
+  color: #f4a51c;
+  text-decoration: none;
+}
+
+.footer-social img {
+  width: 30px;
+  margin: 0 0.5rem;
+}
